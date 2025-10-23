@@ -9,7 +9,7 @@ import Categories from './pages/Categories.jsx'
 import Contact from './pages/Contact.jsx'
 import Produits from './pages/Produits.jsx'
 import Notfound from './pages/NotFound.jsx'
-import { BrowserRouter as Router, Routes, Route } from 'react-router'
+import { BrowserRouter, Routes, Route } from 'react-router'
 
 
 createRoot(document.getElementById('root')).render(
