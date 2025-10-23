@@ -1,0 +1,15 @@
+.home{
+    text-align: center;
+}
+.home h1{
+    color: wheat;
+    font-size: 5rem;
+    margin: 2rem;
+}
+.home h2{
+    font-size: 3rem;
+    margin: 2rem;
+}
+.home p{
+    font-size: 2rem;
+}

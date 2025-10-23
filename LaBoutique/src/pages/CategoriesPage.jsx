@@ -1,6 +1,6 @@
-import React from 'react';
-import produitsData from '../data/produits.json';
-import CategoryCard from '../composants/CategoryCard';
+import React from "react";
+import produitsData from "../data/produits.json";
+import CategoryCard from "../composants/CategoryCard";
 
 // Fonction utilitaire pour calculer les catégories et le nombre de produits
 const prepareCategories = (products) => {
@@ -10,10 +10,10 @@ const prepareCategories = (products) => {
     return acc;
   }, {});
 
-  return Object.keys(categoryCounts).map(id => ({
+  return Object.keys(categoryCounts).map((id) => ({
     id: id,
-    nom: id.charAt(0).toUpperCase() + id.slice(1), 
-    count: categoryCounts[id]
+    nom: id.charAt(0).toUpperCase() + id.slice(1),
+    count: categoryCounts[id],
   }));
 };
 
@@ -24,8 +24,18 @@ const CategoriesPage = () => {
     <div className="categories-page container">
       <h1>Liste des Catégories</h1>
       <div className="category-list">
-        {categories.map(cat => (
-          <CategoryCard key={cat.id} categorie={cat} /> 
+        {categories.map((cat) => (
+          <CategoryCard
+            key={category.id}
+            id={category.id}
+            name={category.name}
+            numberProducts={
+              DATA.products.filter(
+                (product) =>
+                  product.category.toLowerCase() === category.id.toLowerCase()
+              ).length
+            }
+          />
         ))}
       </div>
     </div>

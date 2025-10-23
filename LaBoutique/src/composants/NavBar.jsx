@@ -1,8 +1,9 @@
 import { NavLink, Link, Outlet } from "react-router";
 import "./NavBar.css";
 
-const Navbar = () => {
+function Navbar () {
   return (
+    <>
     <nav className="navbar">
       {/* 1. Logo/Marque */}
       <div className="navbar-logo">
@@ -35,6 +36,7 @@ const Navbar = () => {
         </li>
       </ul>
     </nav>
+    </>
   );
 };
 
