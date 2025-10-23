@@ -38,19 +38,5 @@ const Navbar = () => {
   );
 };
 
-// function NavBar() {
-//   return (
-//     <>
-//       <nav>
-//         <h1>La Boutique</h1>
-//         <Link to="/">Accueil</Link>
-//         <Link to="/produits">Produits</Link>
-//         <Link to="/categories">Catégories</Link>
-//         <Link to="/contact">Contact</Link>
-//       </nav>
-//       <Outlet />
-//     </>
-//   );
-// }
 
 export default Navbar;

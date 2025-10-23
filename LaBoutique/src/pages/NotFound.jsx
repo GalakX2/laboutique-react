@@ -1,7 +1,7 @@
 function NotFound () {
   return (
     <>
-      <h2>Ho ho , are you lost !</h2>
+      <h2><strong> Sorry, you're lost !</strong></h2>
     </>
   )
 }
