@@ -1,0 +1,43 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Espacement entre le logo et le menu */
+    align-items: center;
+    background-color: #333; /* Fond sombre */
+    padding: 0.8rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style du Logo */
+.navbar-logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Menu principal */
+.navbar-menu {
+    list-style: none; /* Supprimer les puces */
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    margin-left: 1.5rem;
+}
+
+/* Liens de navigation */
+.navbar-link {
+    text-decoration: none;
+    color: #ccc; /* Couleur de lien par défaut */
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #fff; /* Couleur au survol */
+    border-bottom: 2px solid #5cb85c; /* Petite ligne verte pour l'effet */
+}
